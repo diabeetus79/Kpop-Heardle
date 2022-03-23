@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.mat-list-item{
+    border: 1px solid grey ;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom:10px;
+    justify-items: center;
+
+}
+.mat-list{
+    width:80%;
+    padding-left: 10%;
+}
+
+::ng-deep.mat-fab .mat-button-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+  }
+.search-bar{
+    width: 80%;
+    padding-left: 10%;
+}
+.title-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+}
+.title-div{
+    width: 30%;
+    padding-left: 50%;
+}
+.mat-spinner {
+    left: 40%;
+    padding-bottom: 20px;
+    top: 15px;
+    align-self:center;
+
+  }
+  .skip-button {
+      margin-left: 10%;
+    background-color: lightgray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+  }
+  .submit-button{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 17px;
+    margin-right: 10%;
+    background-color: #549455;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:white;
+    letter-spacing: 1px;
+
+
+
+  }
+
+
+  .play-button {
+    align-self:center;
+    width:70px;
+    height:70px;
+    .mat-icon{
+        font-size: 70px;
+        display: flex;
+
+    }
+    
+   
+}

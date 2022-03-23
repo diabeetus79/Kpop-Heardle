@@ -1,0 +1,30 @@
+
+  <div class="main-body" fxLayout="column">
+    <mat-list role="list">
+        <mat-list-item *ngFor="let a of answers">
+          <mat-icon *ngIf="a !== '' && a !=='SKIPPED'"style="color:red">cancel</mat-icon>{{a}}</mat-list-item>
+      </mat-list>
+      
+      <div *ngIf="dailySongId  === ''">
+        <mat-spinner [diameter]="40"></mat-spinner>
+      </div>
+      <div *ngIf="dailySongId.length > 0" fxLayout="column">
+        <button mat-icon-button (click)="onButtonClick()" class="play-button">
+          <div class="inner">
+            
+            <mat-icon *ngIf="!isPlaying">play_arrow</mat-icon>
+            <app-animated-equaliser-icon *ngIf="isPlaying"></app-animated-equaliser-icon>
+          </div>
+        </button>
+        <yt-player [videoId]="dailySongId" style="opacity:0%; height:0px" (stateChange)="onStateChange($event)"></yt-player>
+        
+      </div>
+      <app-search-component (selectAnswerEvent)='updatedSelectedAnswer($event)'></app-search-component>
+      <div class="footer-row" fxLayout="row" fxLayoutAlign="space-between center">
+        <button mat-flat-button class="skip-button" (click)="onSkip()" >SKIP {{currentIncrement()}}</button>
+        <button mat-flat-button class="submit-button" (click)="onSubmit()" [disabled]="currentAnswer === null">SUBMIT</button>
+    </div>
+      
+
+  </div>
+

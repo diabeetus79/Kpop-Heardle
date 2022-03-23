@@ -1,0 +1,53 @@
+.video-player{
+    display: flex;
+}
+.success-card{
+    height: 50%;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.subtitle-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.song-details-card{
+    margin-top: 20px;
+    height:fit-content;
+
+
+}
+.mat-card{
+    border-top: solid 0.2px lightgrey;
+    border-left: solid 0.2px lightgrey;
+}
+.info-text{
+    padding-left: 20px;
+}
+.expiry-card{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.closing-text{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.end-screen-container{
+    width:100%;
+    justify-content: center;
+
+}
+.player-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top:30px;
+}

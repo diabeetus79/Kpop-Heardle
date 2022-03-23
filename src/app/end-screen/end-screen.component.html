@@ -1,0 +1,41 @@
+<div fxLayout="column" class="end-screen-container" fxLayout="center center">
+
+
+    <div class="player-container" *ngIf="songDetails">
+        <yt-player class='video-player' [options]='{width: 350, height: 200}' [videoId]="songDetails.youtubeId"></yt-player>
+
+    </div>
+    <div class="success-card">
+        <span style="display: flex; justify-content: center; padding-bottom: 10px">{{resultText}}</span>
+        <div fxLayout="row" style="justify-content:center">
+            <div>
+                {{resultString}}
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="width: 100%; justify-content: center; display: flex;">
+        <mat-card style="box-shadow: 10px 10px 5px #aaaaaa;">
+            <mat-card-content>
+                <div class="song-details-card" *ngIf="songDetails" fxLayout="column">
+                    <span class="subtitle-text">Album:</span> <span class="info-text">{{songDetails.album}}</span>
+                    <span class="subtitle-text">Title:</span> <span class="info-text">{{songDetails.title}}</span>
+                    <span class="subtitle-text">Artist(s):</span> <span class="info-text"
+                        *ngFor="let artist of songDetails.artists">{{artist.name}}</span>
+
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+
+
+
+
+    <div class="expiry-card" *ngIf="songDetails" fxLayout="column">
+        <span class="closing-text">COMEBACK AGAIN TOMORROW !!</span>
+
+    </div>
+</div>

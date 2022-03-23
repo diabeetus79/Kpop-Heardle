@@ -1,0 +1,12 @@
+// .restart-button{
+//     padding-left: 100px;
+//     font-size: 30px;
+// }
+.disabled-button{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+.working-button{
+    pointer-events:all;
+    cursor:pointer;
+}
