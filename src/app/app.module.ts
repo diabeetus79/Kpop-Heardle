@@ -22,7 +22,6 @@ import { SearchComponentComponent } from './search-component/search-component.co
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EndScreenComponent } from './end-screen/end-screen.component';
-import { AnimatedEqualiserIconComponent } from './animated-equaliser-icon/animated-equaliser-icon.component';
 import { MainComponent } from './main/main.component';
 import {MatCardModule} from '@angular/material/card';
 
@@ -33,7 +32,6 @@ import {MatCardModule} from '@angular/material/card';
     HomeComponent,
     SearchComponentComponent,
     EndScreenComponent,
-    AnimatedEqualiserIconComponent,
     MainComponent,
   ],
   imports: [

@@ -13,7 +13,7 @@
           <div class="inner">
             
             <mat-icon *ngIf="!isPlaying">play_arrow</mat-icon>
-            <app-animated-equaliser-icon *ngIf="isPlaying"></app-animated-equaliser-icon>
+            <mat-icon *ngIf="isPlaying">equalizer</mat-icon>
           </div>
         </button>
         <yt-player [videoId]="dailySongId" style="opacity:0%; height:0px" (stateChange)="onStateChange($event)"></yt-player>
